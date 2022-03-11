@@ -5,7 +5,7 @@ import { greenBright as success, blueBright as info, redBright as error } from '
 function rename() {
     const renamedFiles = [
         ...renameNaipe('Sopranos'),
-        ...renameNaipe('Mezzo-Sopranos'),
+        ...renameNaipe('Mezzo sopranos'),
         ...renameNaipe('Contraltos'),
         ...renameNaipe('Tenores'),
         ...renameNaipe('Barítonos'),

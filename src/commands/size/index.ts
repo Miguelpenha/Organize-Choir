@@ -4,7 +4,7 @@ import { greenBright as success, blueBright as info, cyanBright as info2 } from 
 
 function size() {
     const sizeSopranos = sizeNaipe('Sopranos') | 0
-    const sizeMezzoSopranos = sizeNaipe('Mezzo-Sopranos') | 0
+    const sizeMezzoSopranos = sizeNaipe('Mezzo sopranos') | 0
     const sizeContraltos = sizeNaipe('Contraltos') | 0
     const sizeTenores = sizeNaipe('Tenores') | 0
     const sizeBarítonos = sizeNaipe('Barítonos') | 0
@@ -15,7 +15,7 @@ function size() {
     })
 
     table.push([info(sizeSopranos.toFixed(2)), info2('Sopranos')])
-    table.push([info(sizeMezzoSopranos.toFixed(2)), info2('Mezzo-Sopranos')])
+    table.push([info(sizeMezzoSopranos.toFixed(2)), info2('Mezzo sopranos')])
     table.push([info(sizeContraltos.toFixed(2)), info2('Contraltos')])
     table.push([info(sizeTenores.toFixed(2)), info2('Tenores')])
     table.push([info(sizeBarítonos.toFixed(2)), info2('Barítonos')])

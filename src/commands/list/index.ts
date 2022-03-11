@@ -10,7 +10,7 @@ import makeDocx from './makeDocx'
 export default async function list() {
     const cantores: Icantor[] = [
         ...listCantores('Sopranos'),
-        ...listCantores('Mezzo-Sopranos'),
+        ...listCantores('Mezzo sopranos'),
         ...listCantores('Contraltos'),
         ...listCantores('Tenores'),
         ...listCantores('Barítonos'),

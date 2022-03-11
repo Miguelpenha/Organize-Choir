@@ -8,7 +8,7 @@ function exportJson(caminhoJson: string) {
     if (caminhoJson) {
         const cantores: Icantores = {
             sopranos: exportNaipe('Sopranos'),
-            mezzoSopranos: exportNaipe('Mezzo-Sopranos'),
+            mezzoSopranos: exportNaipe('Mezzo sopranos'),
             contraltos: exportNaipe('Contraltos'),
             tenores: exportNaipe('Tenores'),
             barítonos: exportNaipe('Barítonos'),
