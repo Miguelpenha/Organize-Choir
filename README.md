@@ -22,3 +22,7 @@
 ```powershell
     npm run dev export .
 ```
+**Ajuda**
+```powershell
+    npm run dev help
+```
