@@ -11,6 +11,7 @@ import size from './commands/size'
 import list from './commands/list'
 import exportJson from './commands/export'
 import dimensions from './commands/dimensions'
+import help from './commands/help'
 import { redBright as error } from 'chalk'
 
 switch (process.argv[2]) {
@@ -36,6 +37,12 @@ switch (process.argv[2]) {
         break
     case 'dimensions':
         dimensions()
+
+        break
+    case 'help': 
+    case '--help':
+    case '-h':
+        help()
 
         break
     default:
