@@ -1,5 +1,5 @@
 {
-  "name": "Organize-Choir",
+  "name": "organize-choir",
   "version": "1.0.0",
   "description": "Organizador de coros",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
     "dev": "ts-node-dev --respawn --ignore-watch node_modules src/index.ts"
   },
   "keywords": [],
-  "author": "Miguel da Penha",
+  "author": "Miguel da Penha <miguel.penha1@gmail.com> (https://portfolio-sand-xi.vercel.app/)",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.2",

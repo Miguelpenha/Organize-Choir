@@ -7,7 +7,7 @@ import fs from 'fs'
 import makeMd from './makeMd'
 import makeDocx from './makeDocx'
 
-export default async function list() {
+export default async function list(pathFolder?: string) {
     const cantores: Icantor[] = [
         ...listCantores('Sopranos'),
         ...listCantores('Mezzo sopranos'),
@@ -64,8 +64,8 @@ export default async function list() {
     console.log(table.toString())
     console.log(tableResult.toString())
 
-    const caminho = path.resolve(process.env.PROJECT_PATH, 'Lista de cantores')
-
+    const caminho = path.resolve(pathFolder ? pathFolder : process.env.PROJECT_PATH, 'Lista de cantores')
+    
     !fs.existsSync(caminho) && fs.mkdirSync(caminho)
     
     makeMd(cantores, caminho, totalCantoresSend.length, totalCantoresNotSend.length)

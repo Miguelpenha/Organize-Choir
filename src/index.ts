@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 
-import dotenv from 'dotenv'
-import path from 'path'
-dotenv.config({
-   path: path.resolve(__dirname, '..', '.env')
-})
+import 'dotenv/config'
 import mkdir from './commands/mkdir'
 import rename from './commands/rename'
 import size from './commands/size'
@@ -28,7 +24,8 @@ switch (process.argv[2]) {
         
         break
     case 'list':
-        list().then()
+        const pathFolder: string | undefined = process.argv[3] ? process.argv[3].replace('"', '') : undefined
+        list(pathFolder).then()
         
         break
     case 'export':
@@ -47,6 +44,6 @@ switch (process.argv[2]) {
         break
     default:
         console.log(error('Comando inválido'))
-    
+        
         break
 }
