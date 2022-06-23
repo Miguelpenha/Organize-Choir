@@ -43,6 +43,7 @@ switch (process.argv[2]) {
     case 'help': 
     case '--help':
     case '-h':
+    case undefined:
         help()
 
         break
