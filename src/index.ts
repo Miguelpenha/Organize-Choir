@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 
-import 'dotenv/config'
+import dotenv from 'dotenv'
+import path from 'path'
+dotenv.config({
+   path: path.resolve(__dirname, '..', '.env')
+})
 import mkdir from './commands/mkdir'
 import rename from './commands/rename'
 import size from './commands/size'

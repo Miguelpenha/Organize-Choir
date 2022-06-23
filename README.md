@@ -14,9 +14,9 @@
 ```powershell
     npm run dev size
 ```
-**Listar cantores e quem enviou e não enviou e criar arquivo markdown e dock com base nisso**
+**Listar cantores e quem enviou e não enviou e criar arquivo markdown e docx com base nisso, pode ter o caminho padrão alterado**
 ```powershell
-    npm run dev list
+    npm run dev list .
 ```
 **Exportar lista com todos os cantores nas pastas**
 ```powershell
